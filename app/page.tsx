@@ -37,9 +37,9 @@ export default function VehicleTracker() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-8">
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-yellow-50 to-amber-50 p-8">
       <div className="max-w-6xl mx-auto">
-        <div className="bg-white rounded-2xl shadow-xl p-8 mb-8">
+        <div className="bg-white rounded-2xl shadow-xl p-8 mb-8 border-t-4 border-orange-500">
           <h1 className="text-4xl font-bold text-gray-800 mb-2">Vehicle Tracking System</h1>
           <p className="text-gray-600">Click on any vehicle number to track its location</p>
         </div>
@@ -51,16 +51,16 @@ export default function VehicleTracker() {
               href={vehicle.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
+              className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100"
             >
-              <div className="bg-gradient-to-r from-blue-500 to-indigo-600 p-6">
+              <div className="bg-gradient-to-r from-orange-400 to-amber-500 p-6">
                 <div className="flex items-center justify-between">
-                  <div className="bg-white bg-opacity-20 rounded-lg p-3">
+                  <div className="bg-white bg-opacity-25 rounded-lg p-3">
                     <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                     </svg>
                   </div>
-                  <div className="bg-white bg-opacity-20 rounded-full p-2">
+                  <div className="bg-white bg-opacity-25 rounded-full p-2">
                     <svg className="w-5 h-5 text-white group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                     </svg>
@@ -69,9 +69,9 @@ export default function VehicleTracker() {
               </div>
               
               <div className="p-6">
-                <h2 className="text-2xl font-bold text-gray-800 mb-2">{vehicle.number}</h2>
+                <h2 className="text-2xl font-bold text-gray-800 mb-3">{vehicle.number}</h2>
                 <div className="flex items-center text-sm text-gray-600">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 mr-2 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
@@ -79,23 +79,19 @@ export default function VehicleTracker() {
                 </div>
               </div>
               
-              <div className="bg-gray-50 px-6 py-4 border-t border-gray-100">
+              <div className="bg-gradient-to-r from-orange-50 to-amber-50 px-6 py-4 border-t border-gray-100">
                 <div className="flex items-center justify-between text-sm">
-                  <span className="text-gray-600">Active: 00:00 - 23:30</span>
-                  <div className="flex items-center text-green-600">
-                    <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
-                    <span className="font-medium">Online</span>
-                  </div>
+                  <span className="text-gray-700 font-medium">Active: 00:00 - 23:30</span>
                 </div>
               </div>
             </a>
           ))}
         </div>
 
-        <div className="mt-8 bg-white rounded-xl shadow-lg p-6">
+        <div className="mt-8 bg-white rounded-xl shadow-lg p-6 border-l-4 border-orange-500">
           <div className="flex items-start">
-            <div className="bg-blue-100 rounded-lg p-3 mr-4">
-              <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-orange-100 rounded-lg p-3 mr-4">
+              <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
